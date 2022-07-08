@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300&display=swap');
+@font-face {
+    font-family: "harryP";
+    src: url(./imagens/HarryP-MVZ6w.ttf);
+}
+
+:root{
+    --white-color: #ffffff;
+    --red-color: #740001;
+    --gold-color: #D3A625;
+    --green-color: #1A472A;
+    --yellow-color: #FFD800;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*INICIO HEADER*/
+
+header{
+    width: 100vw;
+    height: 150px;
+    display: flex;
+}
+
+div#logo{
+    height: 150px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin-left:100px;
+}
+
+div#logo img{
+    height: 100px;
+}
+
+nav{
+    width: 70%;
+    margin-right: 40px;
+}
+  
+nav ul{
+    height: 150px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.menuitem{
+    font-size: 1.25em;
+}
+
+.menuitem a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.menuitem a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.menuitem a:hover{
+    text-decoration: underline;
+    color: var(--yellow-color);
+}
+
+.d-none{
+    display: none;
+    font-size: 2em;
+}
+/*FIM HEADER*/
+
+/*INICIO SECTION HERO*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#hero{
+    width: 100vw;
+    height: 550px;
+}  
+
+#imgHero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    z-index: -9999;
+}
+
+#hero h2{
+    font-family: 'harryP';
+    font-size: 5.5em;
+    font-weight: normal;
+    color: var(--gold-color);
+    text-shadow: 0 0 2px var(--red-color);
+    margin-top: 100px;
+}
+
+#hero button{
+    width: 300px;
+    height: 68px;
+    margin-top: 100px;
+    background: var(--gold-color);
+    border: 1px solid var(--red-color);
+    border-radius: 5px;
+    transition: 0.3s;
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: var(--red-color);
+}
+
+#hero button:hover{
+   background: var(--yellow-color);
+}
+
+/*INICIO SECTION HERO*/
+
+/*INICIO SECTIONS CASAS E PROFESSORES*/
+#firstSection, #secondSection, #thirdSection, #fourthSection, #fifthSection{
+    margin-bottom: 50px;
+}
+
+h3{
+    font-family: 'Montserrat';
+    font-size: 2em;
+    color: var(--red-color);
+    margin-top: 50px;
+}
+
+h4{
+    color: var(--green-color);
+}
+
+#houses, .professors{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    column-gap: 10px;
+    margin-top: 50px;
+}
+
+.house, .teacher{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 250px;
+    height: 500px;
+    padding: 3px;
+}
+
+.teacher{
+    height: 350px;
+    padding: 10px;
+}
+
+.house:hover, .teacher:hover, .news:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.house img, .teacher img{
+    height: 250px;
+    width: auto;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+/*FIM SECTIONS CASAS E PROFESSORES*/
+
+/*INICIO SECTION NOTICIAS*/
+.news{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 90%;
+    padding: 3px;
+}
+
+.news img{
+    height: 500px;
+    width: auto;
+    transition: 0.3s;
+}
+
+.news img:hover{
+    transform: scale(1.01);
+    opacity: 0.9;
+}
+
+.details {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    margin-top: 50px;
+}
+
+.details h4{
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.details button{
+    width: 180px;
+    height: 40px;
+    margin-top: 50px;
+    background: var(--green-color);
+    border: 1px solid var(--green-color);
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 1em;
+    color: var(--white-color);
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
+.details button:hover, #eventSearch button:hover, #eventsBtn:hover, #sendBtn:hover{
+   background: var(--red-color);
+}
+
+/*FIM SECTION NOTICIAS*/
+
+/*INICIO SECTION EVENTOS*/
+#searchTitle, #contact{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--green-color);
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#eventSearch{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+input, textarea{
+    height: 45px;
+    padding-left: 10px;
+    border: 1px solid var(--green-color);
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+#description{
+    width: 400px;
+    margin-right: 20px;
+}
+
+#date{
+    width: 200px;
+    margin-right: 20px;
+}
+
+#eventSearch button{
+    height: 45px;
+    width: 150px;
+    border: var(--green-color);
+    border-radius: 5px;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    transition: 0.3s;
+}
+
+#events{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+td{
+    padding: 10px 10px;
+    text-align: left;
+    color: var(--green-color);
+}
+
+.eventDate{
+    border-right: 3px solid var(--green-color);
+}
+
+.fa-calendar-alt,.fa-clock{
+    margin-right: 10px;
+}
+
+#eventsBtn, #sendBtn{
+    height: 40px;
+    width: 400px;
+    border: var(--green-color);
+    border-radius: 5px;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    transition: 0.3s;
+    margin-top: 50px;
+    font-size: 1em;
+}
+/*FIM SECTION EVENTOS*/
+
+/*INICIO SECTION CONTATO*/
+#contactInfo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#name, #email, #message{
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+#message{
+    padding-top: 10px;
+    height: 200px;
+}
+
+#sendBtn{
+    width: 500px;
+    margin-top: 20px;
+}
+/*INICIO SECTION CONTATO*/
+
+.fa-circle-arrow-up{
+    color: var(--gold-color);
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    z-index: 10000;
+    transition: 0.3s;
+}
+
+footer{
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    text-align: center;
+}
+
+
+
+@media (max-width: 576px) {
+    header{
+        height: 112px;
+        background-color: var(--red-color);
+    }
+
+    div#logo{
+        height: 112px;
+        margin-left:50px;
+    }
+
+    nav ul{
+        height: 112px;
+    }
+      
+    .menuitem{
+        display: none;
+    }
+      
+    .d-none{
+        display: block;
+    }
+
+    #hero{
+        background-color: var(--red-color);
+        height: 200px;
+    }  
+    
+    #imgHero {
+        display: none;
+    }
+
+    #hero h2{
+        font-size: 3.5em;
+        margin-top: 20px;
+    }
+
+    #hero button{
+        width: 200px;
+        height: 34px;
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: 1em;
+    }
+
+    .house, .teacher{
+        margin-top: 20px;
+    }
+
+    .professors{
+        margin-top: 0;
+    }
+
+    .news{
+        margin-top: 10px;
+        padding: 3px;
+    }
+    
+    .news img{
+        height: 400px;
+    }
+
+    .details {
+        width: auto;
+    }
+    
+    .details h4{
+        margin-bottom: 20px;
+    }
+    
+    .details button{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #eventSearch {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    input {
+        margin: 10px;
+        padding-left: 10px;
+    }
+    
+    #description {
+        width: 300px;
+        margin-right: 0;
+    }
+    
+    #date{
+        width: 300px;
+        margin-right: 0;
+    }
+
+    #eventSearch button{
+        width: 200px;
+        margin: 10px;
+    }
+
+    #events{
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+
+    #eventsBtn{
+        width: 300px;
+    }
+    
+    table{
+        margin-top: 15px;
+    }
+
+    td {
+        width: 200px;
+    }
+    
+    #name, #email, #message{
+        width: 300px;
+    }
+    
+    #sendBtn{
+        width: 300px;
+    }
+}
+
+@media (max-width: 850px) and (min-width: 577px){
+    header{
+        height: 112px;
+        background-color: var(--red-color);
+    }
+
+    div#logo{
+        height: 112px;
+        margin-left:50px;
+    }
+
+    nav ul{
+        height: 112px;
+    }
+      
+    .menuitem{
+        display: none;
+    }
+      
+    .d-none{
+        display: block;
+    }
+
+    #hero{
+        background-color: var(--red-color);
+        height: 200px;
+    }  
+    
+    #imgHero {
+        display: none;
+    }
+
+    #hero h2{
+        font-size: 4em;
+        margin-top: 20px;
+    }
+
+    #hero button{
+        width: 250px;
+        height: 42px;
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: 1.25em;
+    }
+
+    .house, .teacher{
+        margin-top: 20px;
+    }
+
+    .professors{
+        margin-top: 0;
+    }
+
+    .news img{
+        height: 500px;
+    }
+
+    .details {
+        width: auto;
+    }
+
+    .details h4{
+        margin-bottom: 20px;
+    }
+
+    .details button{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #eventSearch {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        margin: 10px;
+    }
+    
+    #description{
+        width: 400px;
+        margin-right: 0;
+    }
+    
+    #date{
+        width: 400px;
+        margin-right: 0;
+    }
+
+    #eventSearch button{
+        width: 200px;
+        margin: 10px;
+    }
+
+    #events{
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+
+    table{
+        margin-top: 15px;
+    }
+
+    td {
+        width: 200px;
+    }
+
+}

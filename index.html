@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>Hogwarts</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a href="#logo" title="link para o inicio da página"><img src="./imagens/hogwarts-logo.png" alt="Logo de Hogwarts" title="Hogwarts"></a>
+            </div>
+
+            <nav>
+                <ul>
+                  <li class="menuitem"><a href="#logo" title="link para o inicio da página">Início</a></li>
+                  <li class="menuitem"><a href="#firstSection" title="link para a seção das casas">Casas</a></li>
+                  <li class="menuitem"><a href="#secondSection" title="link para a seção dos professores">Professores</a></li>
+                  <li class="menuitem"><a href="#thirdSection" title="link para a seção das notícias">Notícias</a></li>
+                  <li class="menuitem"><a href="#fourthSection" title="link para a seção dos eventos">Eventos</a></li>
+                  <li class="menuitem"><a href="#fifthSection" title="link para a seção dos eventos">Contatos</a></li>
+                  <li class="menuitem d-none"><i class="fa fa-bars"></i></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero">
+                <img id="imgHero" src="./imagens/hogwarts.jpeg" alt="Castelo de Hogwarts" title="Castelo de Hogwarts">
+                <h2>Bem-vindo a Hogwarts</h2>
+                <button onclick="window.location.href = '#firstSection';">Conheça nossa escola</button>
+            </section>
+
+            <section id="firstSection">
+                <h3>Casas</h3>
+                <div id="houses">
+                    <div class="house">
+                        <img src="./imagens/grifinoria.jpeg" alt="Brasão da Grifinória" title="Brasão da Grifinória">
+                        <div class="info">
+                            <h4>Grifinória</h4>
+                            <p>Simbolizada por um leão e pelas cores vermelho e dourado, a Grifinória é dirigida pela Professora Minerva McGonagall. As principais características do membro da casa são a nobreza, a ousadia e a coragem.</p>
+                        </div>
+                    </div>
+
+                    <div class="house">
+                        <img src="./imagens/sonserina.jpeg" alt="Brasão da Sonserina" title="Brasão da Sonserina">
+                        <div class="info">
+                            <h4>Sonserina</h4>
+                            <p>A casa de Salazar Slytherin é dirigida pelo Professor Severo Snape e valoriza ambição, astúcia e individualismo. A casa tem as cores verde e prata, além de ser simbolizada por uma cobra. Seu fantasma residente é o Barão Sangrento.</p>
+                        </div>
+                    </div>
+
+                    <div class="house">
+                        <img src="./imagens/lufa.jpeg" alt="Brasão da Lufa-Lufa" title="Brasão da Lufa-Lufa">
+                        <div class="info">
+                            <h4>Lufa-Lufa</h4>
+                            <p>A casa Lufa-Lufa enaltece valores como bondade, amor e empatia acima de todas as outras coisas. Tendo um texugo como símbolo e as cores amarelo e preto. Seu fantasma é o Frei Gorducho e a Professora diretora é Pomona Sprout.</p>
+                        </div>
+                    </div>
+
+                    <div class="house">
+                        <img src="./imagens/corvinal.jpeg" alt="Brasão da Cornival" title="Brasão da Cornival">
+                        <div class="info">
+                            <h4>Corvinal</h4>
+                            <p>A casa dos que possuem inteligência, originalidade, espirituosidade e criatividade. Corvinal tem as cores azul e bronze, águia como símbolo e o Professor Fílio Flitwick como diretor.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="secondSection">
+                <h3>Professores</h3>
+                <div class="professors">
+                    <div class="teacher">
+                        <img src="./imagens/McGonagall_the_Withch.png" alt="Professora McGonagall" title="Professora McGonagall">
+                        <div class="info">
+                            <h4>Minerva McGonagall</h4>
+                            <p>Professora de Transfiguração.</p>
+                        </div>
+                    </div>
+
+                    <div class="teacher">
+                        <img src="./imagens/snape.jpeg" alt="Professor Snape" title="Professor Snape">
+                        <div class="info">
+                            <h4>Severo Snape</h4>
+                            <p>Professor de Defesa Contra as Artes das Trevas.</p>
+                        </div>
+                    </div>
+
+                    <div class="teacher">
+                        <img src="./imagens/hagrid-ch.jpeg" alt="Professor Hagrid" title="Professor Hagrid">
+                        <div class="info">
+                            <h4>Rúbeo Hagrid</h4>
+                            <p>Professor de Trato das Criaturas Mágicas.</p>
+                        </div>
+                    </div>
+
+                    <div class="teacher">
+                        <img src="./imagens/ProfFlitwick.webp" alt="Professor Flitwick" title="Professor Flitwick">
+                        <div class="info">
+                            <h4>Fílio Flitwick</h4>
+                            <p>Professor de Feitiços.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="professors">
+                    <div class="teacher">
+                            <img src="./imagens/horace_slughorn.webp" alt="Professor Slughorn" title="Professor Slughorn">
+                            <div class="info">
+                                <h4>Horácio Slughorn</h4>
+                                <p>Professor de Poções.</p>
+                            </div>
+                    </div>
+    
+                    <div class="teacher">
+                            <img src="./imagens/pomona_sprout.webp" alt="Professora Sprout" title="Professora Sprout">
+                            <div class="info">
+                                <h4>Pomona Sprout</h4>
+                                <p>Professora de Herbologia.</p>
+                            </div>
+                    </div>
+    
+                    <div class="teacher">
+                            <img src="./imagens/Sybil_Trelawney.jpeg" alt="Professora Trelawney" title="Professora Trelawney">
+                            <div class="info">
+                                <h4>Sibila Trelawney</h4>
+                                <p>Professora de Adivinhação.</p>
+                            </div>
+                    </div>
+    
+                    <div class="teacher">
+                            <img src="./imagens/RolandaHooch.png" alt="Professora Hooch" title="Professora Hooch">
+                            <div class="info">
+                                <h4>Rolanda Hooch</h4>
+                                <p>Instrutora de Vôo.</p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="thirdSection">
+                <h3>O Profeta Diário</h3>
+                <div class="news">
+                        <img src="./imagens/BlackFlyer.jpeg" alt="Poster de Procurado com foto do Sirius Black" title="Sirius Black PROCURADO">
+                    <div class="details">
+                         <h4>BLACK AINDA FORAGIDO</h4>
+                        <p>Sirius Black, provavelmente o condenado de pior fama já preso na fortaleza de Azkaban, continua a escapar da polícia, confirmou hoje o Ministério da Magia.</p>
+
+                        <p>"Estamos fazendo todo o possível para recapturar Black." disse o Ministro da Magia, Cornélio Fudge, ouvido esta manhã, "e pedimos à comunidade mágica que se mantenha calma."</p>
+                            
+                        <p>  Fudge tem sido criticado por alguns membros da Confederação Internacional dos Bruxos por ter comunicado a crise ao primeiro-ministro dos trouxas.</p>
+                        
+                        <button>Veja mais notícias</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="fourthSection">
+                <h3>Eventos</h3>
+                <p id="searchTitle">Consulte aqui os Eventos agendados:</p>
+                <div id="eventSearch">
+                    <input type="text" name="description" id="description" placeholder="Descrição Evento">
+                    <input type="text" name="date" id="date" placeholder="Data do Evento">
+                    <button>BUSCAR</button>
+                </div>
+                <div id="events">
+                    <table>
+                        <tr>
+                            <td class="eventDate"><i class="fas fa-calendar-alt"></i>28/09/2022<br>
+                            <i class="fas fa-clock"></i>09:00</td>
+                            <td><strong>Visita à Hogsmeade</strong></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td class="eventDate"><i class="fas fa-calendar-alt"></i>05/11/2022<br>
+                            <i class="fas fa-clock"></i>19:00</td>
+                            <td><strong>Baile de Inverno</strong></td>
+                        </tr>
+                    </table>
+                </div>
+                <button id="eventsBtn">Eventos da Semana</button>
+            </section>
+
+            <section id="fifthSection">
+                <h3>Contato</h3>
+                <p id="contact">Fale Conosco</p>
+                <form action="#" method="post">
+                    <div id="contactInfo">
+                            <input type="text" name="name" id="name" placeholder="Nome" required>
+                            <input type="email" name="email" id="email" placeholder="E-mail" required>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem" required></textarea>
+                            <button id="sendBtn" type="submit">ENVIAR</button>
+                    </div>
+                </form>
+            </section>
+
+            <div class="arrow">
+                <a href="#logo" title="link para retornar ao início da página"><i class="fa-solid fa-circle-arrow-up fa-xl"></i></a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Instituto Infnet - Assessment Interfaces Web</p>
+        </footer>
+    </div>
+</body>
+</html>
